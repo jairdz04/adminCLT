@@ -143,7 +143,11 @@
         </div>
 
 
-    <asp:SqlDataSource ID="AlumnosResource" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" DeleteCommand="DELETE FROM [alumno] WHERE [id_alumno] = @id_alumno" InsertCommand="INSERT INTO [alumno] ([tipo], [identificacion], [nombres], [curso], [sede], [sexo], [director_grupo], [fecha_nacimiento], [descripcion_inicial]) VALUES (@tipo, @identificacion, @nombres, @curso, @sede, @sexo, @director_grupo, @fecha_nacimiento, @descripcion_inicial)" SelectCommand="SELECT * FROM [alumno] WHERE ([id_alumno] = @id_alumno)" UpdateCommand="UPDATE [alumno] SET [tipo] = @tipo, [identificacion] = @identificacion, [nombres] = @nombres, [curso] = @curso, [sede] = @sede, [sexo] = @sexo, [director_grupo] = @director_grupo, [fecha_nacimiento] = @fecha_nacimiento, [descripcion_inicial] = @descripcion_inicial WHERE [id_alumno] = @id_alumno">
+    <asp:SqlDataSource ID="AlumnosResource" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" 
+        DeleteCommand="DELETE FROM [alumno] WHERE [id_alumno] = @id_alumno" 
+        InsertCommand="INSERT INTO [alumno] ([tipo], [identificacion], [nombres], [curso], [sede], [sexo], [director_grupo], [fecha_nacimiento], [descripcion_inicial]) VALUES (@tipo, @identificacion, @nombres, @curso, @sede, @sexo, @director_grupo, @fecha_nacimiento, @descripcion_inicial)" 
+        SelectCommand="SELECT * FROM [alumno] WHERE ([id_alumno] = @id_alumno)"
+        UpdateCommand="UPDATE [alumno] SET [tipo] = @tipo, [identificacion] = @identificacion, [nombres] = @nombres, [curso] = @curso, [sede] = @sede, [sexo] = @sexo, [director_grupo] = @director_grupo, [fecha_nacimiento] = @fecha_nacimiento, [descripcion_inicial] = @descripcion_inicial WHERE [id_alumno] = @id_alumno">
         <DeleteParameters>
             <asp:Parameter Name="id_alumno" Type="Int32" />
         </DeleteParameters>

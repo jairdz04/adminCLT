@@ -50,6 +50,7 @@
                         <td> 
                      
                             <a href="gestionar.aspx?id_alumno=<%#DataBinder.Eval(Container.DataItem, "id_alumno") %>" class="btn btn-warning">Gestionar</a>                            
+                            <a href="detalle.aspx?id_alumno=<%#DataBinder.Eval(Container.DataItem, "id_alumno") %>" class="btn btn-info">Ver</a>                            
                              
                         </td>
                     </tr> 

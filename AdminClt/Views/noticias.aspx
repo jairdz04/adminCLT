@@ -27,7 +27,7 @@
                         <td> <asp:Label ID="a" runat="server"><%#DataBinder.Eval(Container.DataItem, "comentario") %></asp:Label></td>
 
                         <td> 
-                            <a href="detalle.aspx?id_alumno=<%#DataBinder.Eval(Container.DataItem, "id_historia") %>" class="btn btn-info">ver</a>                             
+                            <a href="detalle.aspx?id_alumno=<%#DataBinder.Eval(Container.DataItem, "id_alumno") %>" class="btn btn-info">ver</a>                             
                         </td>
                     </tr> 
                   </table>

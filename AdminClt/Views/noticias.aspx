@@ -19,7 +19,7 @@
         <div class="container table-responsive"  style="padding-top: 1em;">
               <table class="table table-hover">
                     <tr>
-                        <td ><strong>El usuario </strong><asp:Label ID="Label1" runat="server"><%#DataBinder.Eval(Container.DataItem, "email") %></asp:Label> ha creado una historia</td>
+                        <td ><strong>El usuario </strong><asp:Label ID="Label1" runat="server"><%#DataBinder.Eval(Container.DataItem, "id_docente") %></asp:Label> ha creado una historia</td>
                         <td> <asp:Label ID="lblIdenti" runat="server"><%#DataBinder.Eval(Container.DataItem, "fecha_comentario") %></asp:Label></td>
 
                     </tr>
@@ -35,7 +35,8 @@
         </ItemTemplate>
     </asp:Repeater>
               
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" SelectCommand="SELECT * FROM [historia] ORDER BY [fecha_comentario]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" 
+                SelectCommand="SELECT * FROM [historia] ORDER BY [fecha_comentario]"></asp:SqlDataSource>
               
     </div>
 

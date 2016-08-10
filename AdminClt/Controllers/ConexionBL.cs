@@ -16,7 +16,7 @@ namespace AdminClt.Controllers
 
         public ConexionBL() {
 
-            a = new SqlConnection("Server=JAIRDIAZ\\SQLEXPRESS; Database= CLT; Integrated Security=true");
+            a = new SqlConnection("workstation id=adminclt.mssql.somee.com;packet size=4096;user id=jairdz04_SQLLogin_1;pwd=zlmtwnn1sa;data source=adminclt.mssql.somee.com;persist security info=False;initial catalog=adminclt");
 
         }
 

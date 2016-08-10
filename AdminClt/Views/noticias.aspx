@@ -13,16 +13,19 @@
              </section>
 
        
-    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" >
-        <ItemTemplate>
+   
 
         <div class="container table-responsive"  style="padding-top: 1em;">
               <table class="table table-hover">
+                   <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" >
+                        <ItemTemplate>
                     <tr>
                         <td ><strong>El usuario </strong><asp:Label ID="Label1" runat="server"><%#DataBinder.Eval(Container.DataItem, "id_docente") %></asp:Label> ha creado una historia</td>
                         <td> <asp:Label ID="lblIdenti" runat="server"><%#DataBinder.Eval(Container.DataItem, "fecha_comentario") %></asp:Label></td>
+                     
 
                     </tr>
+                    
                     <tr>
                         <td> <asp:Label ID="a" runat="server"><%#DataBinder.Eval(Container.DataItem, "comentario") %></asp:Label></td>
 
@@ -30,13 +33,15 @@
                             <a href="detalle.aspx?id_alumno=<%#DataBinder.Eval(Container.DataItem, "id_alumno") %>" class="btn btn-info">ver</a>                             
                         </td>
                     </tr> 
+                    </ItemTemplate>
+                </asp:Repeater>
                   </table>
                 </div>
-        </ItemTemplate>
-    </asp:Repeater>
+      
               
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" 
-                SelectCommand="SELECT * FROM [historia] ORDER BY [fecha_comentario]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CLTConnectionString %>" SelectCommand="SELECT * FROM [historia]">
+
+        </asp:SqlDataSource>
               
     </div>
 

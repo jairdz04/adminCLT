@@ -19,7 +19,7 @@ namespace AdminClt.Views
                     LblDropdown.Text= Session["UserID"].ToString();
                     LblMenu.Text = Session["UserID"].ToString();
                     LblPerfil.Text = Session["UserID"].ToString();
-
+                    
                     
             }else{
                 Response.Redirect("http://localhost:2461/Views/login/Default.aspx");

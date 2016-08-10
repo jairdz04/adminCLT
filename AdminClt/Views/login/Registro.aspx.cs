@@ -41,7 +41,7 @@ namespace AdminClt.Views.login
                 d.area = txtArea.Text;
                 d.sede = sede.SelectedValue;
                 d.telefono = txtTelefono.Text;
-                d.fecha_nacimiento = "12/12/12";
+                d.fecha_nacimiento = f_nacimiento.Text;
                 r.CrearDocente(d);
             
                     
@@ -52,6 +52,7 @@ namespace AdminClt.Views.login
                         u.password = txtPassword.Text;
                         us.CrearPass(u);
                         Response.Write("<script>alert('Usuario Creado Correctamente');</script>");
+                        limpiar();
                         
                         
                     }else {
@@ -60,6 +61,7 @@ namespace AdminClt.Views.login
 
                     }
 
+
             }
 
            
@@ -67,6 +69,21 @@ namespace AdminClt.Views.login
            
 
    
+        }
+
+        public void limpiar (){
+            inputEmail.Text = "";
+            identi.SelectedValue = null;
+            txtIdentificacion.Text = "";
+            txtNombres.Text = "";
+            f_nacimiento.Text = "";
+            txtArea.Text = "";
+            sexo.SelectedValue = null;
+            sede.SelectedValue = null;
+            txtTelefono.Text = "";
+            txtPassword.Text = "";
+            txtConfirmar.Text = "";
+        
         }
 
 

@@ -138,10 +138,11 @@
             </div>
             <!-- /.tab-content -->
               <div class="col-md-9">
-                       <input class="form-control input-sm" placeholder="Comentario">
+                       <asp:TextBox runat="server" ID="txtComentario" class="form-control input-sm" placeholder="Comentario"></asp:TextBox>
                     </div>
                      <div class="col-md-3">
-                       <button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>
+                       <asp:button type="submit" runat="server" ID="btn_send" OnClick="btn_send_Click"
+                            class="btn btn-danger pull-right btn-block btn-sm" Text="Send"/>
                      </div>
 
           </div>

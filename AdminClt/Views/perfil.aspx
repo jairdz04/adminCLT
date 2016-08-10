@@ -29,16 +29,16 @@
                               <b>Identificación</b> <a class="pull-right"><asp:Label ID="Label2" runat="server"><%#DataBinder.Eval(Container.DataItem, "identificacion") %></asp:Label></a>
                             </li>
                             <li class="list-group-item">
-                              <b>Curso</b> <a class="pull-right"><asp:Label ID="Label3" runat="server"><%#DataBinder.Eval(Container.DataItem, "sede") %></asp:Label></a>
+                              <b>Sede</b> <a class="pull-right"><asp:Label ID="Label3" runat="server"><%#DataBinder.Eval(Container.DataItem, "sede") %></asp:Label></a>
                             </li>
                               <li class="list-group-item">
-                              <b>Sede</b> <a class="pull-right"><asp:Label ID="Label4" runat="server"><%#DataBinder.Eval(Container.DataItem, "area") %></asp:Label></a>
+                              <b>Área</b> <a class="pull-right"><asp:Label ID="Label4" runat="server"><%#DataBinder.Eval(Container.DataItem, "area") %></asp:Label></a>
                             </li>
                              <li class="list-group-item">
-                              <b>Sexo</b> <a class="pull-right"><asp:Label ID="Label7" runat="server"><%#DataBinder.Eval(Container.DataItem, "email") %></asp:Label></a>
+                              <b>email</b> <a class="pull-right"><asp:Label ID="Label7" runat="server"><%#DataBinder.Eval(Container.DataItem, "email") %></asp:Label></a>
                             </li>
                             <li class="list-group-item">
-                              <b>Director de Grupo</b> <a class="pull-right"><asp:Label ID="Label5" runat="server"><%#DataBinder.Eval(Container.DataItem, "telefono") %></asp:Label></a>
+                              <b>Telefono</b> <a class="pull-right"><asp:Label ID="Label5" runat="server"><%#DataBinder.Eval(Container.DataItem, "telefono") %></asp:Label></a>
                             </li>
                             <li class="list-group-item">
                               <b>F. de Nacimiento</b> <a class="pull-right"><asp:Label ID="Label6" runat="server"><%#DataBinder.Eval(Container.DataItem, "fecha_nacimiento") %></asp:Label></a>

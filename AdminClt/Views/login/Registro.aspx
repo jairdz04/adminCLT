@@ -36,7 +36,7 @@
 
          <div class="col-md-9">
 
-         <h2> <strong>Registro de usuarios</strong></h2>
+         <h2> <strong>Registro de usuarios</strong></h2><p><a href="default.aspx">Iniciar sesión</a></p>
          <hr/>
          <br/>
           
@@ -94,33 +94,8 @@
 
             <div class="form-group">
                 <label class="control-label col-xs-3">F. Nacimiento:</label>
-                <div class="col-xs-3">
-                    <select class="form-control">
-                        <option>Dia</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                </div>
-                <div class="col-xs-3">
-                    <select class="form-control">
-                        <option>Mes</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                </div>
-                <div class="col-xs-3">
-                    <select class="form-control">
-                        <option>Año</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-
-                    </select>
+                 <div class="col-xs-9">
+                    <asp:TextBox ID="f_nacimiento" type="date" runat="server" class="form-control"></asp:TextBox>
                 </div>
             </div><br /><br />
 
@@ -158,16 +133,6 @@
             </div><br /><br />
 
             <div class="form-group">
-                <div class="col-xs-offset-3 col-xs-9">
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="agree"/> Accepto
-                    </label>
-                    <button class="btn btn-default" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Terminos y condiciones</button>
-                </div>
-            </div><br />
-            
-            <br/>
-            <div class="form-group">
                 <div class="col-xs-offset-3 col-xs-9"><br />
                     <asp:Button ID="btnEnviar" type="submit" runat="server" class="btn btn-primary" value="Enviar" OnClick="btnEnviar_Click" Text="Enviar"/>
                     <input type="reset" class="btn btn-default" value="Limpiar" />
@@ -177,18 +142,12 @@
         
 
          </div>
+
+
 </form>
 </div>
 
-    <!-- Large modal -->
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      ...
-    </div>
-      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-  </div>
-</div>
+   
  
 
         <script src="../../Scripts/jquery-3.1.0.min.js"></script>

@@ -2,7 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
 
+     
+           /*.fixed-nav {
+           position: fixed;
+           }*/
+
+    </style>
 
     <div class="col-md-12">
 
@@ -16,11 +23,6 @@
         <div class="col-sm-6"></div>
 
           <div class="input-group col-sm-6  ">
-            <input type="text" name="q" class="form-control" placeholder="Buscar..."/>
-                <span class="input-group-btn">
-                  <button  name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                  </button>
-                </span>
             <button class="btn btn-success pull-right" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Añadir Alumno</button>
           </div>
 
@@ -29,10 +31,9 @@
               <table class="table table-hover">
                     <tr>
                         <td><strong>Nombres</strong></td>
-                        <td><strong>Apellidos</strong></td>
                         <td><strong>Identificación</strong></td>
+                        <td><strong>Sede</strong></td>
                         <td><strong>Curso</strong></td>
-                        <td><strong>email</strong></td>
                         <td><strong>Sexo</strong></td>
 
                     </tr>
@@ -43,7 +44,6 @@
                         <td> <asp:Label ID="lblIdenti" runat="server"><%#DataBinder.Eval(Container.DataItem, "identificacion") %></asp:Label></td>
                         <td> <asp:Label ID="v" runat="server"><%#DataBinder.Eval(Container.DataItem, "sede") %></asp:Label></td>
                         <td> <asp:Label ID="f" runat="server"><%#DataBinder.Eval(Container.DataItem, "curso") %></asp:Label></td>
-                        <td> <asp:Label ID="e" runat="server"><%#DataBinder.Eval(Container.DataItem, "curso") %></asp:Label></td>
                         <td> <asp:Label ID="r" runat="server"><%#DataBinder.Eval(Container.DataItem, "sexo") %></asp:Label></td>
 
                         
@@ -106,7 +106,7 @@
            </div>
            
               <asp:Label runat="server"> Director de grupo</asp:Label> <asp:TextBox ID="txtDirector" type="text" runat="server" class="form-control"></asp:TextBox>
-              <asp:Label runat="server"> Fecha</asp:Label> <asp:TextBox ID="TxtFecha" type="text" runat="server" class="form-control"></asp:TextBox>
+              <asp:Label runat="server"> F. de Nacimiento</asp:Label> <asp:TextBox ID="TxtFecha" type="date" runat="server" class="form-control"></asp:TextBox>
               <asp:Label runat="server">Descripción inicial</asp:Label>  <asp:TextBox ID="txtDescripcion" type="text" runat="server" class="form-control"></asp:TextBox>
         </div>
 

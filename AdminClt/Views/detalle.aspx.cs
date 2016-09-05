@@ -41,9 +41,10 @@ namespace AdminClt.Views
                 Response.Write("<script> alert('Campos vacios');</script>");
             }
             else {
+                DateTime localTime = DateTime.Now;
                 Historia hi = new Historia();
                 hi.comentario = txtComentario.Text;
-                hi.fecha_comentario = "12-12-12 7:00";
+                hi.fecha_comentario = Convert.ToString(localTime);/*"12-12-12 7:00";*/ 
                 hi.id_alumno = 1;
                 hi.id_docente = 1;
                 h.CrearAlumno(hi);
@@ -53,7 +54,7 @@ namespace AdminClt.Views
             
 
         }
-
+        
 
 
 

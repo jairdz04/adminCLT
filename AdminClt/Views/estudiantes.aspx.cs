@@ -13,16 +13,19 @@ namespace AdminClt.Views
 {
     public partial class estudiantes : System.Web.UI.Page
     {
+        SqlDataSource sqld = new SqlDataSource();
         ConexionBL a = new ConexionBL();
         AlumnoController al = new AlumnoController();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+              
         }
 
         protected void btnGuardar_click (object sender, EventArgs e)
         {
+
+
 
             if ((txtIdentificacion.Text == "") || (txtNombres.Text == "") || (txtCurso.Text == "") || (txtCurso.Text == "") || (txtDirector.Text == "") || (sexo.SelectedValue == null) || (sede.SelectedValue == null) || (identi.SelectedValue == null)||(TxtFecha.Text== ""))
             {
@@ -34,6 +37,7 @@ namespace AdminClt.Views
 
 
                 Alumno d = new Alumno();
+               
                 d.nombres = txtNombres.Text;
                 d.tipo = identi.SelectedValue;
                 d.identificacion = txtIdentificacion.Text;
@@ -69,6 +73,7 @@ namespace AdminClt.Views
         
         }
 
+      
 
     }
 }

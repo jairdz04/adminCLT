@@ -9,8 +9,15 @@
     <link href="../../Content/css/bootstrap.css" rel ="stylesheet" type="text/css"/>
 
     <style>
+       /* .fixed-nav {
+           position: fixed;
+           }*/
         #img_logo {
         margin-left:40%;
+        width: 20%;
+
+        }
+        .logo-lg {
         
         }
         
@@ -23,7 +30,7 @@
          <div class="col-md-12">
 
              <div class="modal-header">
-          <img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg" />
+          <img class="img-circle" id="img_logo" src="/img/img_log.png" />
         </div>
 
              <div class="modal-body">
@@ -36,11 +43,7 @@
                                             <asp:TextBox ID="login_password" runat="server" class="form-control" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
 
 
-                         <div class="checkbox">
-                               <label>
-                                        <input type="checkbox"/> Recuerdame
-                               </label>
-                        </div>
+                         
                   </div>
 
              <div class="modal-footer">

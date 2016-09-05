@@ -127,6 +127,8 @@
     <Content Include="dist\js\demo.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="img\img_log.png" />
+    <Content Include="img\perfil.jpg" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
     <Content Include="plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
@@ -927,10 +929,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
-    <Content Include="Views\contacto.aspx" />
     <Content Include="Views\detalle.aspx" />
     <Content Include="Views\gestionar.aspx" />
     <Content Include="Views\estudiantes.aspx" />
+    <Content Include="Views\inicio.aspx" />
     <Content Include="Views\login\Default.aspx" />
     <Content Include="Views\login\Registro.aspx" />
     <Content Include="Views\noticias.aspx" />
@@ -951,13 +953,6 @@
     <Compile Include="Models\Historia.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\contacto.aspx.cs">
-      <DependentUpon>contacto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\contacto.aspx.designer.cs">
-      <DependentUpon>contacto.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Views\detalle.aspx.cs">
       <DependentUpon>detalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -978,6 +973,13 @@
     </Compile>
     <Compile Include="Views\estudiantes.aspx.designer.cs">
       <DependentUpon>estudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\login\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -1060,6 +1062,7 @@
     <Content Include="plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="plugins\input-mask\phone-codes\phone-codes.json" />
+    <None Include="Properties\PublishProfiles\jairdz04.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

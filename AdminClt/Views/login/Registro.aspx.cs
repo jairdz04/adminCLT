@@ -63,11 +63,6 @@ namespace AdminClt.Views.login
 
 
             }
-
-           
-            
-           
-
    
         }
 

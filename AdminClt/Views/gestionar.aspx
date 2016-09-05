@@ -123,7 +123,7 @@
                       
 
                          <div class="col-md-4"><asp:Label runat="server">Fecha de Nacimiento</asp:Label></div>            
-                         <div class="col-md-6"><asp:TextBox ID="txtFecha" type="text" runat="server" class="form-control" Text='<%# Bind("fecha_nacimiento") %>' /></div>
+                         <div class="col-md-6"><asp:TextBox ID="txtFecha" type="date" runat="server" class="form-control" Text='<%# Bind("fecha_nacimiento") %>' /></div>
                         
                          <div class="col-md-4"><asp:Label runat="server"> Descripción Inicial</asp:Label></div>            
                          <div class="col-md-6"><asp:TextBox ID="txtDescripcion" type="text" runat="server" class="form-control" Text='<%# Bind("descripcion_inicial") %>'/></div>

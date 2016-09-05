@@ -30,12 +30,16 @@ namespace AdminClt.Controllers
 
         }
 
+
+
         public void CrearAlumno(Alumno m)
         {
             String insert = "insert into alumno (tipo, identificacion, nombres , curso , sede, sexo, director_grupo, fecha_nacimiento, descripcion_inicial) values ('" + m.tipo + "','" + m.identificacion + "','" + m.nombres + "','" + m.curso + "','" + m.sede + "','" + m.sexo + "','" + m.director_grupo + "','" + m.fecha_nacimiento + "','" + m.descripcion_inicial + "')";
             ejecutar(insert);
 
         }
+
+
 
         public void EliminarAlumno(string id)
         {

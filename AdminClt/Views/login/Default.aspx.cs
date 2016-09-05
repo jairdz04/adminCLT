@@ -33,7 +33,7 @@ namespace AdminClt.Views.login
             {
 
                 Session["UserID"] = login_username.Text;
-                Response.Redirect("../estudiantes.aspx");
+                Response.Redirect("../inicio.aspx");
             }
             else {
                 Response.Write("<script> alert ('Datos Erroneos');</script>");
@@ -44,6 +44,21 @@ namespace AdminClt.Views.login
             }
 
             a.getA.Close();
+
+
+           /* HttpCookie perfil = new HttpCookie("perfil");
+
+            perfil.Values.Add("nombres");
+            perfil.Values.Add("tipo");
+            perfil.Values.Add("identificacion");
+            perfil.Values.Add("sexo");
+            perfil.Values.Add("email");
+            perfil.Values.Add("area");
+            perfil.Values.Add("sexo");
+            perfil.Values.Add("fecha_nacimiento");
+            perfil.Values.Add("telefono");
+
+            */
 
         }
 
